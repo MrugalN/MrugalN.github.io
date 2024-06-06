@@ -3,6 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    padding-bottom: 50px; /* Added padding to prevent content from being hidden behind the footer */
 }
 
 header {
@@ -33,4 +34,8 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+footer a {
+    color: white; /* Change email link color to white */
 }
