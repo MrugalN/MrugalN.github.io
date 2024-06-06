@@ -39,3 +39,14 @@ a:hover {
 footer a {
     color: white; /* Change email link color to white */
 }
+
+@media (max-width: 768px) {
+    section {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    header, footer {
+        padding: 1em;
+    }
+}
