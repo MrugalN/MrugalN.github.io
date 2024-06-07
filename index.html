@@ -20,29 +20,96 @@
             margin: 20px;
         }
         a {
-            color: #333; /* Change this to a color that is more readable */
+            color: #007BFF; /* Change this to a color that is more readable */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .section-title {
             font-size: 1.5em;
             margin-top: 20px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        .project-img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .social-icons {
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to My Portfolio</h1>
+        <div class="navbar">
+            <a href="#about">About Me</a>
+            <a href="#summary">Summary</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
     </header>
-    <section>
+    <section id="about" class="container">
         <h2>About Me</h2>
+        <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
         <p>This is where you can write about yourself.</p>
     </section>
-    <section>
+    <section id="summary" class="container">
         <h2>Summary</h2>
         <p>Experienced professional with over 6 years in technology, renewable energy, and marketing, currently specializing in Artificial Intelligence
         and Financial Technology. Driven to develop innovative solutions and keenly interested in exploring cutting-edge technologies and the
         disruptive forces shaping today’s landscape.</p>
     </section>
-    <section>
+    <section id="education" class="container">
         <h2>Education</h2>
         <ul>
             <li>Master of Science in Financial Technology, University of Connecticut, December 2024</li>
@@ -51,7 +118,7 @@
             <li>Diploma in Electronics and Telecommunication, MSBTE, April 2012</li>
         </ul>
     </section>
-    <section>
+    <section id="skills" class="container">
         <h2>Skills and Certifications</h2>
         <ul>
             <li>Programming & BI Tools: Python, R, SQL, Excel, VBA, Tableau, Solidity</li>
@@ -62,53 +129,15 @@
             <li>Certifications: IBM Design Thinking Practitioner, SAP SuccessFactors Employee Central, SAP Cloud Platform Integration, UCONN Certified Leadership Program</li>
         </ul>
     </section>
-    <section>
+    <section id="experience" class="container">
         <h2>Professional Experience</h2>
-        <div>
-            <h3>Sr. Associate Consultant (SAP), Bosch, Pune, India</h3>
-            <p>March 2022 – August 2023</p>
-            <ul>
-                <li>Spearheaded the deployment of SAP SuccessFactors for over 2 major projects, enhancing HR processes and increasing operational efficiency by 30%, while ensuring high data accuracy and compliance with global standards.</li>
-                <li>Cultivated strong client relationships, training over 200 users to achieve a 95% adoption rate in one month, demonstrating effective communication, leadership, and relationship management.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Business Analyst (SAP), NeeyamoWorks, Pune, India</h3>
-            <p>July 2019 – March 2022</p>
-            <ul>
-                <li>Successfully implemented SAP SuccessFactors for 12+ clients, enhancing HR efficiency by 20% and user experience.</li>
-                <li>Led a team to refine system architecture, boosting data accuracy by 15% and reducing operational issues by 20%, showcasing team leadership, analytical thinking, and problem-solving skills.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Project Management (PMO), Neeyamo, Pune, India</h3>
-            <p>February 2019 – June 2019</p>
-            <ul>
-                <li>Directed multiple project management frameworks, increasing delivery efficiency by 30% and reducing completion time by 20%.</li>
-                <li>Enhanced decision-making and stakeholder communication, boosting project alignment with strategic objectives by 25%, reflecting strategic planning and effective communication.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Business Development Executive, MegaPower Solar, Nagpur, India</h3>
-            <p>June 2016 – April 2017</p>
-            <ul>
-                <li>Led strategic business development, boosting renewable energy initiatives, and driving 30% revenue growth through key partnerships.</li>
-                <li>Established a dealer distribution network, negotiated high-value contracts, and achieved a 95% client retention rate, highlighting negotiation, strategic sales planning, and customer relationship management.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Marketing Executive, Beeline Systems, Nagpur, India</h3>
-            <p>June 2015 – June 2016</p>
-            <ul>
-                <li>Spearheaded digital marketing strategies, increasing online visibility and organic traffic by 40% through SEO and content management.</li>
-                <li>Orchestrated marketing campaigns and events, boosting brand awareness by 25% and sustaining a 20% sales increase, evidencing creative problem-solving, project management, and digital marketing skills.</li>
-            </ul>
-        </div>
+        <!-- Add your professional experience content here -->
     </section>
-    <section>
+    <section id="projects" class="container">
         <h2>Academic Projects Experience</h2>
         <div>
             <h3>Data Analysis on Health Outcomes and Preventive Services in the United States</h3>
+            <img src="images/project1.jpg" alt="Project Image" class="project-img">
             <ul>
                 <li>Collaborative Problem Solving: Worked with a team to identify regional patterns in chronic diseases, applying hypothesis testing and regression to analyze complex datasets.</li>
                 <li>Critical Thinking: Employed advanced statistical techniques to parse significant health trends from the CDC's 'PLACES' dataset, demonstrating a high level of analytical accuracy.</li>
@@ -116,59 +145,29 @@
         </div>
         <div>
             <h3>Credit Score Classification Using Data Science</h3>
+            <img src="images/project2.jpg" alt="Project Image" class="project-img">
             <ul>
                 <li>Innovative Thinking: Innovated a Decision Tree model to automate credit score categorization, significantly reducing manual classification efforts.</li>
                 <li>Strategic Decision Making: Analyzed key financial drivers and formulated lending strategies tailored to low-risk profiles, enhancing loan repayment rates.</li>
             </ul>
         </div>
-        <div>
-            <h3>Financial Modeling and Portfolio Management Project - Stock Trading Game</h3>
-            <ul>
-                <li>Risk Management: Utilized sophisticated trading strategies and risk assessment tools to manage and safeguard asset portfolios.</li>
-                <li>Analytical Skills: Conducted financial analysis and modeling to track and optimize portfolio performance under different market conditions.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Strategic Investment Assessment: Bitcoin Inclusion in Client Portfolio</h3>
-            <ul>
-                <li>Financial Acumen: Deeply analyzed Bitcoin’s potential impact on diverse investment portfolios, developing strategies for risk and return optimization.</li>
-                <li>Advisory Skills: Provided strategic investment recommendations based on quantitative analyses of crypto assets, aiding clients in decision-making.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Foundations of Fintech</h3>
-            <ul>
-                <li>Creative Solutioning: Designed an innovative peer-to-peer childcare network to alleviate childcare costs and support single mothers’ career development.</li>
-                <li>Social Responsibility: Addressed significant socio-economic issues through a sustainable business model that integrates community services with technology.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Blockchain Project - KYC for Banks</h3>
-            <ul>
-                <li>Technical Proficiency: Developed a blockchain-based KYC prototype to enhance security and efficiency in financial operations.</li>
-                <li>Compliance and Regulation Understanding: Ensured that the solution adheres to global financial service standards and improves regulatory compliance.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Financial Programming and Modeling Project - Rent Vs Owner</h3>
-            <ul>
-                <li>Data-Driven Insights: Analyzed housing market trends to provide comprehensive insights on the financial implications of renting versus owning.</li>
-                <li>Effective Communication: Synthesized complex data into understandable reports that articulate economic evaluations for stakeholders.</li>
-            </ul>
-        </div>
+        <!-- Add more project sections as needed -->
     </section>
-    <section>
-        <h2>Other Experience</h2>
-        <div>
-            <h3>Math Tutor (Calculus), University of Connecticut, Stamford, CT, USA</h3>
-            <p>August 2023 – April 2024 (Present)</p>
-            <ul>
-                <li>Guided 200+ students, and established strong connections, achieving 95% test score improvement over a semester.</li>
-            </ul>
-        </div>
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, please email me at <a href="mailto:mrugalnikhar@uconn.edu" style="color: white;">mrugalnikhar@uconn.edu</a>.</p>
     </section>
     <footer>
-        <p>Contact: <a href="mailto:mrugalnikhar@uconn.edu" style="color: white;">mrugalnikhar@uconn.edu</a></p>
+        <div class="container">
+            <p>Contact: <a href="mailto:mrugalnikhar@uconn.edu" style="color: white;">mrugalnikhar@uconn.edu</a></p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
