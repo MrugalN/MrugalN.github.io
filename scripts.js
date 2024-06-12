@@ -1,4 +1,24 @@
 // scripts.js
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll(".nav-link");
+    const sections = document.querySelectorAll(".section");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+
+            // Remove active class from all sections
+            sections.forEach(section => section.classList.remove("active"));
+
+            // Add active class to the clicked section
+            const targetId = event.target.getAttribute("href").substring(1);
+            document.getElementById(targetId).classList.add("active");
+        });
+    });
+
+    // Optional: Automatically show the About section on page load
+    document.getElementById("about").classList.add("active");
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     // Add interactivity here
