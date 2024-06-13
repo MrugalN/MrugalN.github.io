@@ -88,15 +88,104 @@ a:hover {
     margin: 0 auto;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('My Portfolio/Images/A futuristic cityscape with digital technology elements in a lighter and visually engaging color scheme. The scene s.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #020227; /* Dark blue for content */
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: -1;
+}
+
+header, footer {
+    background-color: #1a1a5e; /* Dark blue for header and footer */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #1a1a5e; /* Dark blue for navbar */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    margin: 20px;
+}
+
+a {
+    color: #007BFF; /* Change this to a color that is more readable */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #1a1a5e; /* Dark blue for section titles */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .section-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section-content img {
     order: -1; /* Place the image first */
-    margin-right: 20px; /* Add some space between the image and the text */
+    margin-right: 20px;
 }
 
 .social-icons a {
